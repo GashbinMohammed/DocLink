@@ -1,0 +1,347 @@
+/* Fonts */
+:root {
+  --font-default:  "Montserrat", sans-serif;
+  --font-primary: "Amatic SC", sans-serif;
+}
+
+/* Colors */
+:root {
+    --default-color: #3485fd;
+    --primery-color: #5999f9;
+    --secondery-color: #0dcaf0;
+    --white: #ffffff;
+    --black: #000000;
+    --primery-gray: #f8f9fa;
+}
+
+/* Smooth scroll behavior */
+:root {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--font-default);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.navbar {
+    position: relative;
+}
+
+.header,.main{
+    width: 70%;
+}
+/* header */
+.header .logo {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 14px 0px;
+}
+
+.header .nav-link {
+    font-size: 18px;
+    color: var(--black);
+    margin-top: 6px;
+}
+
+.nav-link:hover {
+    color: var(--default-color);
+}
+
+.contact__btn {
+    background-color: var(--default-color);
+    color: var(--white);
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.contact__btn:hover {
+    background-color: #5999f9;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.offcanvas-header{
+    padding: 20px;
+    font-size: 20px;
+}
+
+#offcanvasNavbar{
+    width: 50%;
+    text-align: center;
+}
+
+/* Introduction section */
+
+.Introduction__section{
+background-color: var(--primery-gray);
+height: 100vh;
+}
+.intro__image img{
+    width: 940px;
+    height: 670px;
+}
+
+
+/* appointments card section */
+
+.apointment-card .col-sm-4 {
+    margin: 0;
+    padding: 0;
+}
+
+.card-1, .card-2, .card-3 .card-header {
+    padding-top: 40px;
+    border: none;
+}
+
+/* First card */
+.apointment-card .card-1 {
+    background-color: #3485fd;
+    border-radius: 0%;
+    border: none;
+    height: 100%;
+}
+
+/* Second card */
+.apointment-card .card-2 {
+    background-color: #5999f9;
+    border-radius: 0%;
+    border: none;
+    height: 100%;
+}
+/* Third card */
+.apointment-card .card-3 {
+    background-color: #0dcaf0;
+    border-radius: 0%;
+    border: none;
+    height: 100%;
+}
+.apointment-card .book-now {
+    color: white;
+    text-decoration: none;
+    padding: 5px 17px;
+    border-radius: 2px;
+    border: 2px solid white;
+}
+
+.apointment-card .card-2 .card-text {
+    text-align: justify;
+}
+
+
+
+.apointment-card .call-now {
+    color: white;
+    text-decoration: none;
+    padding: 5px 17px;
+    border-radius: 2px;
+    border: 2px solid white;
+}
+
+
+/* about section */
+.about,.doctors,.departments__section,.apointment-card,.book__appoinment__section{
+    margin: 200px 0px;
+    
+}
+.about__image{
+    height: 500px;
+}
+.list__items{
+
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+}
+.list__iamge{
+width: 50px;
+height: 50px;
+}
+
+
+/* doctor section */
+
+.doctor__header p,a,i{
+font-size: 20px;
+text-align: justify;
+}
+
+.doctors__card .card {
+    border: none;
+    width: 26rem;
+}
+
+/* departments section */
+
+.department{
+    background-color:var(--primery-gray);
+}
+
+.department i{
+font-size: 30px;
+background-color: var(--default-color);
+padding: 20px;
+border-radius: 100%;
+color: var(--white);
+margin: 15px 0px;
+}
+.department {
+    font-size: 21px;
+}
+
+
+
+/* footer section */
+
+.footer__section{
+    background-color: var(--primery-gray);
+}
+.footer{
+width: 90%;
+padding: 50px 0px;
+margin-top: 70px;
+}
+.footer a{
+   font-size: 16px;
+   color: var(--black);
+   font-weight: 300;
+}
+.footer a:hover{
+    color: var(--default-color);
+}
+
+
+/* book appoinment section */
+
+.book__appoinment__section{
+    background-color: var(--default-color);
+    border-radius: 5px;
+    height: 70vh;
+
+}
+.booking__appointment_description{
+    color: var(--white);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section {
+    background-color: white;
+    width: 90%;
+   padding: 50px 0px;
+}
+
+.form-sec {
+    width: 90%;
+    margin: auto;
+}
+
+.form-sec .form-select { 
+    margin: 20px 0;
+    border: 1px solid rgb(196, 195, 195);
+}
+
+.form-check-label {
+    color: gray;
+    font-size: small;
+}
+
+/* for tablet device */
+@media (max-width: 1024px) {
+
+ /* Header */
+     .header,.main{
+       width: 90%;
+     }
+
+ /* Introduction */
+     .intro__image img{
+        width: 600px;
+        height: 600px;
+       margin-top: 40px;
+    }
+/* about section */
+.about,.doctors,.departments__section,.apointment-card,.book__appoinment__section{
+    margin: 30px 0px;
+}
+
+/* doctor section */
+
+.doctors__card .card {
+    border: none;
+    width: 20rem;
+}
+.booking__appointment_description{
+    height: 20vh;
+}
+
+}
+
+
+/* for very small device */
+
+@media (max-width: 480px) {
+
+ /* header */
+     .header{
+        width: 100%;
+     }
+     .contact__btn {
+        padding: 7px 10px;
+        
+    }
+    
+
+/* Introduction */
+    .intro__description{
+        margin-top: 60px;
+    }
+    .intro__image img{
+        width: 410px;
+        height: 410px;
+       margin-top: 100px;
+    }
+
+/* about section */
+
+.about__image{
+    height: 400px;
+}
+.list__iamge{
+    width: 45px;
+    height: 45px;
+}
+
+/* doctor section */
+
+.doctors__card .card {
+    border: none;
+    width: 330px;
+}
+
+.book__appoinment__section{
+    height: 80vh;
+
+}
+.form-section {
+
+    width: 100%;
+
+}
+
+.form-sec .btn {
+    width: 100%;
+    max-width: 313px; /* Ensure the button doesn't exceed this width */
+}
+}
