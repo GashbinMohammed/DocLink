@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocLink</title>
+
+    <!-- FontAwesome link (optional for icons) -->
+    <script src="https://kit.fontawesome.com/d9ef1bc3bc.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- ScrollReveal link-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="assets/css/home.css">
+
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+
+    
+</head>
+<body>
+    <header class="header container-fluid">
+        <div class="d-flex justify-content-around align-items-center">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand ma-auto logo" href="#">DocList</a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-3" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-3" href="#doctors">Doctors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-3" href="#about">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#contact-us" class="contact-btn">Contact Us</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+    <main>
+
+            <article class="introduction-section">
+                <h1 class="fw-bold mt-5">Consult with the  right doctor for you</h1>
+                <p class="fw-bold text-center">Search 14,600 listings and find your <br> perfect home</p>
+                <section class="top-image">
+                    <img src="assets/images/top-image.png" alt="Top image" class="img-fluid">
+                  </section>
+            </article>
+
+
+        <div class="container-fluid main">
+
+            <article class="row appoinment-section my-5">
+
+                <!-- Opening Hours Section -->
+                <section class="bg-info col-lg-4 appoinment-card">
+                  <div class="card text-white card-1">
+                    <div class="card-header">Opening Hours</div>
+                    <div class="card-body">
+                      <p class="card-text text-center">
+                        <p class="border-bottom border-white p-1 border-opacity-50">Mon-Wed <span class="float-end">6:00 - 10 pm</span></p>
+                        <p class="border-bottom border-white p-1 border-opacity-50">Thursday <span class="float-end">1:00 - 3 pm</span></p>
+                        <p class="border-bottom border-white p-1 border-opacity-50">Friday <span class="float-end">2:00 - 5 pm</span></p>
+                        <p class="border-bottom border-white p-1 border-opacity-50">Sat-Sun <span class="float-end">Closed</span></p>
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              
+                <!-- Appointments Section -->
+                <section class="bg-warning col-lg-4 appoinment-card">
+                  <div class="card text-white card-2">
+                    <div class="card-header">Appointments</div>
+                    <div class="card-body">
+                      <p class="card-text mt-4 mb-3 lh-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected.</p>
+                    </div>
+                    <!-- Footer Section for Button -->
+                    <div class="card-footer text-center">
+                      <a href="#" class="book-now">Book Now</a>
+                    </div>
+                  </div>
+                </section>
+              
+                <!-- Emergency Section -->
+                <section class="bg-info col-lg-4 appoinment-card">
+                  <div class="card card-3 text-white">
+                    <div class="card-header">Emergency</div>
+                    <div class="card-body">
+                      <p class="card-text lh-lg">
+                        <p class="mt-4">Our emergency services are available 24/7 in all areas</p>
+                        <p class="mt-4 mb-5">+(123 332 6359)</p>
+                      </p>
+                    </div>
+                    <!-- Footer Section for Button -->
+                    <div class="card-footer text-center">
+                      <a href="#" class="call-now">Call Now</a>
+                    </div>
+                  </div>
+                </section>
+              
+            </article>
+
+            <article class="row about py-5" id="about">
+                <section class="col-lg-6">
+                    <header class="about-header"><h2 class="fw-bold">We care about your wellbeing</h2></header>
+
+                    <section class="row about-description">
+                        <div class="col-2 number my-2">
+                            <img src="assets/images/num1.png" alt="about number" class="img-fluid">
+                        </div>
+                        <div class="col-10 my-2">
+                        <p class=" pt-2">Top of the line equipment and tools</p>
+                    </div>
+
+                    <div class="col-2 number my-2">
+                        <img src="assets/images/num2.png" alt="about number" class="img-fluid">
+                    </div>
+                    <div class="col-10 my-2">
+                    <p class="pt-2">Leading doctors and nurses in the industry</p>
+                    </div>
+
+                    <div class="col-2 number my-2">
+                        <img src="assets/images/num3.png" alt="about number" class="img-fluid">
+                    </div>
+                    <div class="col-10 my-2">
+                        <p class="pt-2">Easy Followups and appointment booking</p>
+                    </div>
+
+                    <div class="col-2 number my-2">
+                        <img src="assets/images/num4.png" alt="about number" class="img-fluid">
+                    </div>
+                    <div class="col-10 my-2">
+                        <p class="pt-2">24/7 phone support and case assistance</p>
+                    </div>
+                    </section>
+
+                </section>
+
+                <section class="col-lg-6 about-image">
+                    <img src="assets/images/about-us.png" alt="about image" class="img-fluid">
+                </section>
+            </article>
+
+            
+            <article class="row doctor py-5" id="doctors">
+                <section class="col-lg-12">
+                    <header class="doctor-header"><h1 class="fw-bold">We got you covered</h1></header>
+                </section>
+                <section class="col-lg-8 py-3">
+                    <header class="doctor-header"><p class="">Where do we stand on the latest client ask we need to build</p></header>
+                </section>
+                <section class="col-lg-4 d-flex justify-content-lg-end justify-content-start align-items-center py-3">
+                    <header class="doctor-header"><a href="">See All Doctors <i class="fa-solid fa-arrow-right"></i></a></header>
+                </section>
+                
+
+                <section class="col-12 my-4">
+                    <section class="doctor-card">
+
+                        <div class="row">
+
+                          <div class="col">
+                            <div class="card">
+                              <img src="assets/images/Doctors/doctor 1.png" class="card-img-top" alt="doctor">
+                              <div class="card-body">
+                                <p class="card-text">
+                                  <h4>Alice Brown</h4>
+                                  <p>phsychiatrist</p>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="col">
+                            <div class="card">
+                              <img src="assets/images/Doctors/doctor 2.png" class="card-img-top" alt="doctor">
+                              <div class="card-body">
+                                <p class="card-text">
+                                  <h4>Hannah Morales</h4>
+                                  <p>phsychiatrist</p>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="col">
+                            <div class="card">
+                              <img src="assets/images/Doctors/doctor 3.png" class="card-img-top" alt="doctor">
+                              <div class="card-body">
+                                <p class="card-text">
+                                  <h4>Eric Sanchez</h4>
+                                  <p>phsychiatrist</p>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="col">
+                            <div class="card" >
+                              <img src="assets/images/Doctors/doctor 4.png" class="card-img-top" alt="doctor">
+                              <div class="card-body">
+                                <p class="card-text">
+                                  <h4>Charles Peterson</h4>
+                                  <p>phsychiatrist</p>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="col">
+                            <div class="card" >
+                              <img src="assets/images/Doctors/doctor 5.png" class="card-img-top" alt="doctor">
+                              <div class="card-body">
+                                <p class="card-text">
+                                  <h4>Eugene Kennedy</h4>
+                                  <p>phsychiatrist</p>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="col">
+                            <div class="card">
+                              <img src="assets/images/Doctors/doctor 6.png" class="card-img-top" alt="doctor">
+                              <div class="card-body">
+                                <p class="card-text">
+                                  <h4>Paul Turner</h4>
+                                  <p>phsychiatrist</p>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </section>
+                </section>
+            </article>
+
+
+
+            <article class="row department py-5">
+                <header class="section-header mb-3">
+                    <h1 class="fw-bold">Departments</h1>
+                </header>
+
+                    <section class="row text-center">
+
+                        <article class="col-lg-4 col-md-6 col-sm-12 department-card" >
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <p class="fw-bold pt-2">Cardiology</p>
+                            <p class="pb-3">4 Doctors</p>
+                        </article>
+ 
+                        <article class="col-lg-4 col-md-6 col-sm-12 department-card">
+                            <i class="fa-solid fa-tooth"></i>
+                            <p class="fw-bold pt-2">Dentistry</p>
+                            <p class="pb-3">6 Doctors</p>
+                        </article>
+
+                        <article class="col-lg-4 col-md-6 col-sm-12 department-card">
+                            <i class="fa-solid fa-lungs"></i>
+                            <p class="fw-bold pt-2">Pulmonology</p>
+                            <p class="pb-3">8 Doctors</p>
+                        </article>
+                        
+                        <article class="col-lg-4 col-md-6 col-sm-12 department-card">
+                            <i class="fa-solid fa-stethoscope "></i>
+                            <p class="fw-bold pt-2">General Medicine</p>
+                            <p class="pb-3">5 Doctors</p>
+                        </article>
+
+                        <article class="col-lg-4 col-md-6 col-sm-12 department-card">
+                            <i class="fa-solid fa-lungs"></i>
+                            <p class="fw-bold pt-2">Gastroenterology</p>
+                            <p class="pb-3">12 Doctors</p>
+                        </article>
+
+                        <article class="col-lg-4 col-md-6 col-sm-12 department-card">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                            <p class="fw-bold pt-2">Scans</p>
+                            <p class="pb-3">CT, MRI, X-Ray (+6)</p>
+                        </article>
+
+                    </section>
+                
+            </article>
+              
+
+       <!-- Book your appointment section -->
+         <article class="container-fluid book_appoinment py-5">
+    <section class="row">
+      <!-- Description Section -->
+      <section class="col-lg-6 booking_description d-flex align-items-center">
+        <div>
+          <h1 class="fw-bold display-5 text-center text-lg-start">Book your appointment</h1>
+          <p class="mt-4 fw-bold text-justify">Search 14,600 doctors and find the best care near you</p>
+        </div>
+      </section>
+  
+      <!-- Form Section -->
+      <section class="col-lg-6 d-flex justify-content-center align-items-center">
+        <div class="form-section rounded-3 shadow-lg p-4 w-100">
+          <div class="form-sec">
+            <select class="form-select p-2 mb-3" aria-label="Full Name">
+              <option selected disabled hidden>Full Name</option>
+              <option>Alice Brown</option>
+              <option>Eugene Kennedy</option>
+              <option>Eric Sanchez</option>
+            </select>
+            
+            <select class="form-select p-2 mb-3" aria-label="Departments">
+              <option selected disabled hidden>Departments</option>
+              <option>Cardiology</option>
+              <option>Dentistry</option>
+              <option>Pulmonology</option>
+            </select>
+            
+            <select class="form-select p-2 mb-3" aria-label="Date">
+              <option selected disabled hidden>Date</option>
+              <option>Sunday</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+            </select>
+            
+            <select class="form-select p-2 mb-3" aria-label="Time">
+              <option selected disabled hidden>Time</option>
+              <option>2pm - 3pm</option>
+              <option>3pm - 4pm</option>
+              <option>4pm - 5pm</option>
+              <option>5pm - 6pm</option>
+              <option>6pm - 7pm</option>
+              <option>7pm - 8pm</option>
+              <option>8pm - 9pm</option>
+              <option>9pm - 10pm</option>
+            </select>
+            
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                I agree to the Terms & Conditions
+              </label>
+            </div>
+            
+            <button type="button" class="btn btn-primary w-100 mt-4 p-2">Book Now</button>
+          </div>
+        </div>
+      </section>
+    </section>
+           </article>
+  
+      
+            <article class="row ask-question py-5">
+   
+                <!-- First Column -->
+                <div class="col-lg-3 col-md-4 col-12 mb-4 d-flex justify-content-center">
+                    <div>
+                        <header class="d-flex align-items-center">
+                            <i class="fa-solid fa-envelope me-3"></i>
+                            <p class="fw-bold">Ask a Question</p>
+                        </header>
+                        <p>Email support to answer all your questions</p>
+                    </div>
+                </div>
+            
+                <!-- Second Column -->
+                <div class="col-lg-3 col-md-4 col-12 mb-4 d-flex justify-content-center">
+                    <div>
+                        <header class="d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot me-3"></i>
+                            <p class="fw-bold">Location</p>
+                        </header>
+                        <p>Choose our closest branch to your home</p>
+                    </div>
+                </div>
+            
+                <!-- Third Column -->
+                <div class="col-lg-3 col-md-4 col-12 mb-4 d-flex justify-content-center">
+                    <div>
+                        <header class="d-flex align-items-center">
+                            <i class="fa-solid fa-location-pin me-3"></i>
+                            <p class="fw-bold">Promotions</p>
+                        </header>
+                        <p>Explore all our offers and promotions</p>
+                    </div>
+                </div>
+            
+            </article>
+            
+
+            
+
+        </div>
+   
+    </main>
+
+    <footer>
+        <section class="container-fluid footer">
+            <div class="row d-flex justify-content-evenly">
+
+                <section class="col-lg-2 col-md-4 text-lg-center text-md-start mt-2">
+                    <header>
+                        <h5 class="mb-4 fw-bold title">Product</h5>
+                        <p><a href="">Get Started</a></p>
+                        <p><a href="">Update</a></p>
+                        <p><a href="">Features</a></p>
+                        <p><a href="">Pricing</a></p>
+                    </header>
+                </section>
+
+                <section class="col-lg-2 col-md-4 text-lg-center text-md-start mt-2">
+                    <header>
+                        <h5 class="mb-4 fw-bold title">Platforms</h5>
+                        <p><a href="">Android</a></p>
+                        <p><a href="">ios</a></p>
+                        <p><a href="">Web</a></p>
+                        <p><a href="">Unity</a></p>
+                    </header>
+                </section>
+
+                <section class="col-lg-2 col-md-4 text-lg-center text-md-start mt-2">
+                    <header>
+                        <h5 class="mb-4 fw-bold title">Resources</h5>
+                        <p><a href="">Plugins</a></p>
+                        <p><a href="">Events</a></p>
+                        <p><a href="">Integrations</a></p>
+                    </header>
+                </section>
+
+                <section class="col-lg-2 col-md-4 text-lg-center text-md-start mt-2">
+                    <header>
+                        <h5 class="mb-4 fw-bold title">About</h5>
+                        <p><a href="">Community</a></p>
+                        <p><a href="">Company</a></p>
+                        <p><a href="">Jobs</a></p>
+                        <p><a href="">BLog</a></p>
+                    </header>
+                </section>
+
+                <section class="col-lg-2 col-md-8  text-lg-center text-md-start mt-2">
+                    <header>
+                        <h5 class="mb-4 fw-bold title">Support</h5>
+                        <p><a href="">Help Center</a></p>
+                        <p><a href="">Tickets</a></p>
+                        <p><a href="">Contact</a></p>
+                        <p><a href="">Forum</a></p>
+                    </header>
+                </section>
+                
+            </div>
+
+            <hr>
+
+         
+                <article class="row">
+          
+                  <!-- Copyright Section -->
+                  <section class="col-12 col-md-6 text-center text-md-start">
+                    <p class="footer-copyright m-0">&copy; 2025 Gashbin Mohammed. All Rights Reserved.</p>
+                  </section>
+          
+                  <!-- Social Media Section -->
+                  <section class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end mt-3 mt-md-0">
+                    <div class="social-section">
+                      <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                      <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#" class="social-icon"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                  </section>
+          
+                </article>
+     
+        </section>
+    </footer>
+</body>
+</html>

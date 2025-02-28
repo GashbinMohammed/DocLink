@@ -1,0 +1,448 @@
+/* Fonts */
+:root {
+  --font-default: "Montserrat", sans-serif;
+  --font-primary: "Amatic SC", sans-serif;
+}
+
+/* Colors */
+:root {
+  --default-color: #3485fd;
+  --primery-color: #5999f9;
+  --secondery-color: #0dcaf0;
+  --white: #ffffff;
+  --black: #000000;
+  --primery-gray: #f8f9fa;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-default);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/* header */
+.header {
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  .navbar {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 14px 0px;
+  }
+  .nav-link {
+    font-size: 18px;
+    color: var(--black);
+    margin-top: 6px;
+  }
+  .nav-link:hover {
+    color: var(--default-color);
+  }
+
+  .contact-btn {
+    background-color: var(--default-color);
+    color: var(--white);
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .contact-btn:hover {
+    background-color: #5999f9;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .offcanvas-header {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  #offcanvasNavbar {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/* introduction section design */
+
+.introduction-section {
+  background-color: var(--primery-gray);
+  height: fit-content;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 80%;
+}
+.appoinment-card {
+  padding: 0px;
+  .card-header {
+    border-radius: 0px;
+    border: none;
+    font-weight: bold;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    padding-top: 40px;
+    border: none;
+  }
+
+  /* First card */
+  .card-1 {
+    background-color: #3485fd;
+    border-radius: 0%;
+    border: none;
+    height: 100%;
+  }
+
+  /* Second card */
+  .card-2 {
+    background-color: #5999f9;
+    border-radius: 0%;
+    border: none;
+    height: 100%;
+  }
+  /* Third card */
+  .card-3 {
+    background-color: #0dcaf0;
+    border-radius: 0%;
+    border: none;
+    height: 100%;
+  }
+  .book-now {
+    color: white;
+    text-decoration: none;
+    padding: 5px 17px;
+    border-radius: 2px;
+    border: 2px solid white;
+  }
+  .card-2 .card-text {
+    text-align: justify;
+  }
+
+  .card-footer {
+    border: none;
+    margin-bottom: 20px;
+  }
+  .call-now {
+    color: white;
+    text-decoration: none;
+    padding: 5px 17px;
+    border-radius: 2px;
+    border: 2px solid white;
+  }
+}
+
+/* about section design */
+.about-description {
+  padding: 30px 0px;
+  p {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+/* department section design */
+.department-card {
+  background-color: var(--primery-gray);
+  padding: 15px;
+  i {
+    margin-bottom: 5px;
+    color: var(--white);
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: var(--default-color);
+  }
+}
+.department-card:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+/* Doctor Cards Layout */
+.doctor {
+  .doctor-header {
+    margin-bottom: 20px;
+    p {
+      font-size: 23px;
+    }
+    a {
+      font-size: 20px;
+      color: var(--default-color);
+    }
+    i {
+      padding-left: 5px;
+    }
+    a:hover i {
+      transform: translateX(15px);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  .doctor-card {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 15px;
+    .card {
+      border: none;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      height: 100%;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .card:hover {
+      transform: translateY(-10px); /* Slight lift on hover */
+    }
+
+    .card-body {
+      padding: 20px;
+      text-align: center;
+      h5 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #555;
+      }
+    }
+  }
+}
+.ask-question {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  header {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+
+    i {
+      font-size: 25px;
+      margin-right: 10px; /* Adds consistent spacing between icon and text */
+    }
+
+    p {
+      font-size: 19px;
+      margin: 0; /* Remove default margin to ensure consistent layout */
+    }
+  }
+  p {
+    padding: 15px;
+  }
+}
+
+/* Book Appointment Section Styling */
+.book_appoinment {
+  background-color: var(--default-color);
+  color: var(--white);
+  border-radius: 5px;
+  .booking_description {
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .form-section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    select {
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .form-check-label {
+      font-size: 14px;
+      color: #000000;
+    }
+
+    .btn-primary {
+      background-color: #3485fd; /* Custom primary button color */
+      border-color: #3485fd;
+    }
+
+    .btn-primary:hover {
+      background-color: #2991d1; /* Darker shade on hover */
+      border-color: #2991d1;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  /* On small screens, center the form text and stack columns */
+  .booking__appointment_description h1 {
+    font-size: 24px;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .form-select {
+    width: 100%;
+  }
+}
+
+/* Footer styles */
+.footer {
+  padding: 80px;
+  background-color: var(--primery-gray);
+  text-align: center;
+  a {
+    font-size: 16px;
+    color: gray;
+  }
+  a:hover {
+    color: var(--default-color);
+  }
+
+  .footer-copyright {
+    color: gray;
+    font-size: 14px;
+  }
+  .social-icon i {
+    margin: 0px 10px;
+    font-size: 24px;
+    color: var(--black);
+  }
+  .social-section {
+    padding: 0px 60px;
+  }
+}
+
+/* for tablet device */
+@media (max-width: 1024px) {
+  /* Header */
+  .navbar {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .social-section {
+    padding: 0px;
+  }
+  .introduction-section {
+    text-align: center;
+    height: 80vh;
+  }
+  .introduction-section h1 {
+    font-size: 27px;
+  }
+  .main {
+    width: 95%;
+  }
+
+  .doctor-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .doctor-card .card {
+    width: 90%; /* Take up more space */
+    max-width: 350px; /* Keep it constrained */
+    margin: 0 auto 20px;
+  }
+
+  .doctor-card .card-body h5 {
+    font-size: 20px;
+  }
+
+  .doctor-card .card-body p {
+    font-size: 14px;
+  }
+}
+
+/* for very small device */
+@media (max-width: 480px) {
+  /* header */
+  .header {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact-btn {
+    padding: 7px 10px;
+  }
+
+  .doctor-header {
+    text-align: center;
+  }
+
+  .doctor-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .doctor-card .card {
+    width: 90%;
+    margin: 0 auto 20px;
+    max-width: 280px;
+  }
+
+  .doctor-card .card-body h5 {
+    font-size: 18px;
+  }
+
+  .doctor-card .card-body p {
+    font-size: 14px;
+  }
+
+  .doctor-card .book-now {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .introduction-section {
+    text-align: center;
+  }
+  .introduction-section h1 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  .introduction-section p {
+    margin: 10px 0px;
+  }
+}
